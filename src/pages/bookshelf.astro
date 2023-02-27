@@ -11,12 +11,12 @@ import { books } from "../content/books.js";
     <Sectionhead>
       <Fragment slot="title">Bookshelf</Fragment>
       <Fragment slot="desc">
-        I love to read, here are some books I would highly recommend.
+        I love to read, here are some books I would highly recommend in no
+        particular order.
       </Fragment>
     </Sectionhead>
     <div class="grid gap-10 mx-auto max-w-xl mt-12">
-      <ul
-        class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
+      <ul class="grid grid-cols-1 gap-8">
         {
           books.map((book) => (
             <BookCard
