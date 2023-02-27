@@ -7,7 +7,6 @@ interface Props {
   role: "author" | "contributor" | "maintainer" | string;
   url: string;
   description?: string;
-  stars: number;
   languages: string[];
 }
 
@@ -17,12 +16,10 @@ const colors = {
   contributor: "green",
 };
 
-const { name, role, url, description, stars, languages } = Astro.props;
+const { name, role, url, description, languages } = Astro.props;
 ---
 
-<li
-  class="bg-black text-white gap-1 p-6 rounded-lg flex flex-col"
->
+<li class="bg-black text-white gap-1 p-6 rounded-lg flex flex-col">
   <div class="flex justify-between">
     <div class="flex flex-col sm:flex-row sm:items-baseline gap-2">
       <h3 class="text-lg font-medium text-white">{name}</h3>
@@ -32,8 +29,7 @@ const { name, role, url, description, stars, languages } = Astro.props;
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Open ${name} repository in a new tab`}
-    >
+      aria-label={`Open ${name} repository in a new tab`}>
       <Icon
         name="github"
         class="w-6 fill-current hover:text-zinc-300 hover:scale-110 transition-all"
