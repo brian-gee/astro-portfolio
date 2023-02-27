@@ -18,7 +18,7 @@ export const books = [
     title: "How to Win Friends and Influence People",
     author: "Dale Carnegie",
     comment:
-      "Great explanation of why habits are so important and how to turn small actions into big results.",
+      "Dale Carnegie provides practical advice on how to improve your social skills and relationships. The book emphasizes the importance of understanding human nature and using communication and influence techniques to positively impact others.",
     img: howToWinFriends,
     year: 1936,
     reading: false,
@@ -38,7 +38,8 @@ export const books = [
     title:
       "How to Be an Imperfectionist: The New Way to Fearlessness, Confidence, and Freedom from Perfectionism",
     author: "Stephen Guise",
-    comment: "",
+    comment:
+      "Strategies for overcoming the negative impact of perfectionism, including fear and anxiety. Encourages you to embrace imperfection as a path to greater confidence and freedom.",
     img: howToBeAnImperfectionist,
     year: 2015,
     reading: false,
