@@ -1,0 +1,51 @@
+---
+import { Picture } from "@astrojs/image/components";
+import heroImage from "assets/bg.jpg";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+---
+
+<main
+  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-12">
+  <div class="hidden py-6 md:order-1 md:block md:max-w-md">
+    <Picture
+      class={"rounded-full"}
+      src={heroImage}
+      alt="Brian Geertsma's Headshot"
+      widths={[200, 400, 600]}
+      aspectRatio="1:1"
+      sizes="(max-width: 800px) 70vw, 620px"
+      loading="eager"
+      format="avif"
+    />
+  </div>
+  <div>
+    <h1
+      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
+      Brian Geertsma
+    </h1>
+    <p class="text-lg mt-4 text-slate-600 max-w-xl">
+      Miami based software engineer dedicated to creating projects that
+      streamline tasks and enrich our daily lives.
+    </p>
+    <div class="mt-6 flex flex-col sm:flex-row gap-3">
+      <Link
+        href="https://www.linkedin.com/in/brian-geertsma/"
+        target="_blank"
+        class="flex gap-1 items-center justify-center"
+        rel="noopener">
+        LinkedIn
+      </Link>
+      <Link
+        size="lg"
+        style="outline"
+        rel="noopener"
+        href="https://github.com/brian-gee"
+        class="flex gap-1 items-center justify-center"
+        target="_blank">
+        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
+        Github
+      </Link>
+    </div>
+  </div>
+</main>

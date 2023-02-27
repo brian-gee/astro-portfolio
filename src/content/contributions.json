@@ -1,0 +1,9 @@
+[
+  {
+    "name": "astro-portfolio",
+    "url": "https://github.com/brian-gee/astro-portfolio",
+    "description": "My personal portfolio site built with Astro",
+    "languages": ["Astro, TailwindCSS, TypeScript"],
+    "role": "author"
+  }
+]

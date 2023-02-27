@@ -1,0 +1,36 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import BookCard from "@components/bookCard.astro";
+import { books } from "../content/books.js";
+---
+
+<Layout title="Bookshelf">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Bookshelf</Fragment>
+      <Fragment slot="desc">
+        I love to read, here are some books I would highly recommend.
+      </Fragment>
+    </Sectionhead>
+    <div class="grid gap-10 mx-auto max-w-xl mt-12">
+      <ul
+        class="grid grid-cols-1 justify-items-center gap-10 md:justify-items-start">
+        {
+          books.map((book) => (
+            <BookCard
+              title={book.title}
+              author={book.author}
+              comment={book.comment}
+              year={book.year}
+              img={book.img}
+              loading={book.loading as "lazy" | "eager"}
+              reading={book.reading}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </Container>
+</Layout>

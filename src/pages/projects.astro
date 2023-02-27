@@ -1,0 +1,33 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import ProjectCard from "@components/projectCard.astro";
+import openSourceContributions from "../content/contributions.json";
+---
+
+<Layout title="Projects">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">Projects</Fragment>
+      <Fragment slot="desc">Development I'm proud of.</Fragment>
+    </Sectionhead>
+
+    <div class="grid gap-10 mx-auto max-w-xl mt-12">
+      <ul class="grid grid-cols-1 gap-8">
+        {
+          openSourceContributions.map((project) => (
+            <ProjectCard
+              name={project.name}
+              description={project.description}
+              stars={project.stars}
+              role={project.role}
+              url={project.url}
+              languages={project.languages}
+            />
+          ))
+        }
+      </ul>
+    </div>
+  </Container>
+</Layout>
