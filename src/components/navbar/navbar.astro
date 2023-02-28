@@ -24,10 +24,12 @@ const menuitems = [
   {
     title: "LinkedIn",
     path: "https://www.linkedin.com/in/brian-geertsma/",
+    blank: true,
   },
   {
     title: "GitHub",
     path: "https://github.com/brian-gee",
+    blank: true,
   },
 ];
 ---
@@ -60,6 +62,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
+                      target={item.blank ? "_blank" : "_self"}
                       class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
                       {item.title}
                     </a>
