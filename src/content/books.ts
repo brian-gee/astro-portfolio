@@ -18,7 +18,7 @@ export const books = [
     title: "How to Win Friends and Influence People",
     author: "Dale Carnegie",
     comment:
-      "Practical advice on how to improve your social skills and relationships with an emphasis on the importance of understanding human nature and using communication and influence techniques to positively impact others.",
+      "Practical advice on how to improve your social skills and relationships.",
     img: howToWinFriends,
     year: 1936,
     reading: false,
