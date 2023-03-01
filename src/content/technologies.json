@@ -1,0 +1,26 @@
+[
+  {
+    "logo": "astro",
+    "text": "Astro"
+  },
+  {
+    "logo": "typescript",
+    "text": "TypeScript"
+  },
+  {
+    "logo": "python",
+    "text": "Python"
+  },
+  {
+    "logo": "react",
+    "text": "React"
+  },
+  {
+    "logo": "tailwindcss",
+    "text": "TailwindCSS"
+  },
+  {
+    "logo": "node",
+    "text": "Node.js"
+  }
+]
