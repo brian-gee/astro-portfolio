@@ -5,5 +5,12 @@
     "description": "My personal portfolio site built with Astro",
     "languages": ["Astro, TailwindCSS, TypeScript"],
     "role": "author"
+  },
+  {
+    "name": "sk-clean",
+    "url": "https://github.com/brian-gee/sk-clean",
+    "description": "Landing page for a local pool cleaning business",
+    "languages": ["React, DaisyUI, TailwindCSS, TypeScript"],
+    "role": "author"
   }
 ]
