@@ -4,6 +4,10 @@
     "text": "Astro"
   },
   {
+    "logo": "tailwind",
+    "text": "TailwindCSS"
+  },
+  {
     "logo": "typescript",
     "text": "TypeScript"
   },
@@ -14,10 +18,6 @@
   {
     "logo": "react",
     "text": "React"
-  },
-  {
-    "logo": "tailwind",
-    "text": "TailwindCSS"
   },
   {
     "logo": "node",
