@@ -2,7 +2,7 @@
   {
     "name": "simple-balance",
     "url": "https://github.com/brian-gee/simple-balance",
-    "description": "A simple balance app built with React",
+    "description": "A simple balance app built with Swift",
     "languages": ["Swift"],
     "role": "author"
   },
