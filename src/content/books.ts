@@ -2,8 +2,19 @@ import miniHabits from "@assets/books/mini-habits.jpg";
 import howToWinFriends from "@assets/books/how-to-win-friends.jpg";
 import howToBeAnImperfectionist from "@assets/books/imperfectionist.jpg";
 import soundtracks from "@assets/books/soundtracks.jpg";
+import youreTooGood from "@assets/books/youre-too-good.jpg";
 
 export const books = [
+  {
+    title: "You're Too Good to Feel This Bad",
+    author: "Nate Dallas",
+    comment:
+      "Great explanation of why habits are so important and how to turn small actions into big results.",
+    img: youreTooGood,
+    year: 2020,
+    reading: true,
+    loading: "eager",
+  },
   {
     title: "Mini Habits",
     author: "Stephen Guise",
