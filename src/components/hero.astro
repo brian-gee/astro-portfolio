@@ -9,14 +9,16 @@ import { Icon } from "astro-icon";
   class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-12">
   <div class="py-6 lg:order-1 md:block md:max-w-md">
     <Picture
-      class={"rounded-full"}
       src={heroImage}
       alt="Brian Geertsma's Headshot"
-      widths={[200, 400, 600]}
+      class="rounded-full overflow-hidden inline-flex"
+      alt="Image of the author"
       aspectRatio="1:1"
-      sizes="(max-width: 800px) 70vw, 620px"
+      widths={[160, 320, 480]}
       loading="eager"
-      format="avif"
+      sizes="160px"
+      width={160}
+      height={160}
     />
   </div>
   <div>
