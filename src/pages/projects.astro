@@ -13,8 +13,8 @@ import openSourceContributions from "../content/contributions.json";
       <Fragment slot="desc">Development I'm proud of.</Fragment>
     </Sectionhead>
 
-    <div class="grid gap-10 mx-auto max-w-xl mt-12">
-      <ul class="grid grid-cols-1 gap-8">
+    <div class="grid gap-10 mx-auto max-w-xl xl:max-w-4xl mt-12">
+      <ul class="grid grid-cols-1 xl:grid-cols-2 gap-8">
         {
           openSourceContributions.map((project) => (
             <ProjectCard
