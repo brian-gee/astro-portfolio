@@ -3,8 +3,19 @@ import howToWinFriends from "@assets/books/how-to-win-friends.jpg";
 import howToBeAnImperfectionist from "@assets/books/imperfectionist.jpg";
 import soundtracks from "@assets/books/soundtracks.jpg";
 import youreTooGood from "@assets/books/youre-too-good.jpg";
+import keepGoing from "@assets/books/keep-going.jpeg";
 
 export const books = [
+  {
+    title: "Keep Going: 10 Ways to Stay Creative in Good Times and Bad",
+    author: "Austin Kleon",
+    comment:
+      "So far a great book on how to stay creative and productive in the face of adversity.",
+    img: keepGoing,
+    year: 2019,
+    reading: true,
+    loading: "eager",
+  },
   {
     title: "You're Too Good to Feel This Bad",
     author: "Nate Dallas",
@@ -12,7 +23,7 @@ export const books = [
       "Great explanation of why habits are so important and how to turn small actions into big results.",
     img: youreTooGood,
     year: 2020,
-    reading: true,
+    reading: false,
     loading: "eager",
   },
   {
