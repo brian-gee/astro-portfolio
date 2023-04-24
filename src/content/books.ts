@@ -4,16 +4,37 @@ import howToBeAnImperfectionist from "@assets/books/imperfectionist.jpg";
 import soundtracks from "@assets/books/soundtracks.jpg";
 import youreTooGood from "@assets/books/youre-too-good.jpg";
 import keepGoing from "@assets/books/keep-going.jpeg";
+import bigThinking from "@assets/books/the-magic-of-thinking-big.jpeg";
+import cheese from "@assets/books/who-moved-my-cheese.jpeg";
 
 export const books = [
+  {
+    title: "Who Moved My Cheese?",
+    author: "Spencer Johnson",
+    comment: "A short guide to dealing with change.",
+    img: cheese,
+    year: 1999,
+    reading: true,
+    loading: "eager",
+  },
+  {
+    title: "The Magic of Thinking Big",
+    author: "David J. Schwartz",
+    comment:
+      "How to use the power of thinking big to achieve your goals and live a happier life.",
+    img: bigThinking,
+    year: 1959,
+    reading: true,
+    loading: "eager",
+  },
   {
     title: "Keep Going: 10 Ways to Stay Creative in Good Times and Bad",
     author: "Austin Kleon",
     comment:
-      "So far a great book on how to stay creative and productive in the face of adversity.",
+      "A great book on how to stay creative and productive in the face of adversity.",
     img: keepGoing,
     year: 2019,
-    reading: true,
+    reading: false,
     loading: "eager",
   },
   {
