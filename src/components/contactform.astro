@@ -1,21 +1,15 @@
 ---
 import Button from "./ui/button.astro";
+const WEB3_API_KEY = import.meta.env.WEB3_API_KEY;
 ---
 
-<!-- To make this contact form work, create your free access key from https://web3forms.com/
-     Then you will get all form submissions in your email inbox. -->
 <form
   action="https://api.web3forms.com/submit"
   method="POST"
   id="form"
   class="needs-validation"
   novalidate>
-  <input
-    type="hidden"
-    name="access_key"
-    value="795bef11-df67-4a28-93d3-bbe7d6c7dc6e"
-  />
-  <!-- Create your free access key from https://web3forms.com/ -->
+  <input type="hidden" name="access_key" value="WEB3_API_KEY" />
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <div class="mb-5">
     <input
